@@ -1,0 +1,245 @@
+:root{
+    --dark: #19283f;
+    --green: #33d1cc;
+    --red: #ff3150;
+    --yellow: #ffc400;
+    --section: #eff7fa;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-btn{
+    background-color: var(--red);
+    color: var(--yellow);
+    padding: 0.5rem 1rem;
+}
+
+.main-btn:hover{
+    color: var(--yellow);
+    box-shadow: 0 0 0 3px #ffb8c38f;
+}
+
+.main-comp::after{
+    content: " ";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+/* start navbar */
+.navbar{
+    background-color: var(--dark);
+}
+
+.navbar .nav-item .nav-link{
+    color: white;
+}
+
+.navbar .navbar-toggler{
+    color: white;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:hover{
+    color: var(--green);
+}
+
+.navbar .search{
+    border-left: 1px solid var(--green);
+}
+
+.navbar .search svg{
+    color: var(--green);
+}
+
+/* end navbar */
+/* start landing */
+
+.landing{
+    background-color: var(--dark);
+    min-height: calc(100vh - 72px);
+}
+
+
+/* end landing */
+/* start features */
+.features .container .row .feat .icons{
+    height: 200px;
+}
+
+.features .container .row .feat .icons svg{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .container .row .feat .icons .number{
+    font-size: 12rem;
+    color: var(--section);
+
+}
+
+.features .container .row .feat .icons .icon{
+    color: var(--green);
+}
+
+.features .container .row .feat .title{
+    color: var(--yellow);
+}
+
+/* end features */
+/* start work */
+.work{
+    background-color: var(--section);
+}
+
+.work .container ul .active{
+    color: var(--yellow);
+    background-color: var(--red);
+}
+
+.work .container ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.work .container ul li:not(.active):hover{
+    color: var(--red);
+}
+
+.work .container .row .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work .container .row .box::before{
+    content: attr(data-work);
+    color: white;
+    background-color: #19283f86;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    font-weight: 500;
+    font-size: 1.5rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.work .container .row .box:hover::before{
+    transform: translateX(0);
+}
+
+.work .container .btn{
+    padding: 0.5rem 4rem;
+}
+
+/* end work */
+/* start team */
+.team{
+    background-color: var(--section);
+}
+
+.team .container h3{
+    color: var(--yellow);
+}
+
+.team .container .row h3{
+    background-color: var(--green);
+}
+
+/* end team */
+/* start project */
+.project{
+    background-color: var(--dark);
+}
+
+/* end project */
+/* start blog */
+.blog .container .row .box{
+    border: 1px solid rgb(204, 204, 204);
+}
+/* end blog */
+/* start contact */
+.contact{
+    background-color: var(--yellow);
+}
+
+.contact .container h3{
+    color: var(--dark);
+}
+
+.contact .container input{
+    background:none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    min-width: 60%;
+    padding: 0.5rem;
+}
+
+.contact .container input::placeholder{
+    color: white;
+}
+
+.contact .container .btn{
+    background-color: var(--dark);
+    color: var(--yellow);
+    padding: 0.5rem 1rem;
+}
+.contact .container .btn:hover{
+    color: var(--yellow);
+    box-shadow: 0 0 0 3px #19283f61;
+}
+
+/* end contact */
+/* start footer */
+.footer{
+    background-color: var(--dark);
+}
+
+.footer .container .row .details .first{
+    color: var(--green);
+}
+
+.footer .container .row .details .second{
+    color: var(--yellow);
+}
+
+.footer .container .row .box .button{
+    width: 30px;
+    height: 30px;
+    background-color: #33d1cc;
+}
+
+.footer .container .row .box .facebook{
+    background-color: #1877f2;
+}
+
+.footer .container .row .box .twitter{
+    background-color: #1da1f2;
+}
+.footer .container .row .box .linkedin{
+    background-color: #0077b5;
+}
+
+.footer .container .row .box .youtube{
+    background-color: #ff0000;
+}
+
+/* end footer */
